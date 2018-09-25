@@ -20,5 +20,8 @@
   },
   "bin": {
     "weather": "dist/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
   }
 }
