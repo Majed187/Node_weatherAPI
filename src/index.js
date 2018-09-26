@@ -17,15 +17,15 @@ class Weather {
                     return item.description;
                 })
                 .join(' ,');
-            return ` The temperatur ${args} is ${res.data.main.temp}°C ${cond}`;
+            return ` The temperatur in ${args} is ${res.data.main.temp}°C ${cond}`;
         } catch (error) {
-            console.error(error);
+            console.error('Check your city the city you looking for is not exsit');
         }
     }
 }
-const weather = new Weather(args[0]);
+const temp = new Weather(args[0]);
 
-weather
+temp
     .weather()
     .then(console.log)
     .catch(console.error);
