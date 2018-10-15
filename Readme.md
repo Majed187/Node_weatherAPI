@@ -1,1 +1,8 @@
-##To Start the application yarn start #the City name
+
+# CLA Weather app 
+
+## it works only in command line 
+
+### To Start the application 
+`yarn start` 
+### and the City name
